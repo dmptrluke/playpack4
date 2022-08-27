@@ -1,0 +1,129 @@
+{
+	"populate": {
+		"thorium": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+                    "name": "nuclearcraft:ore",
+                    "properties": {
+                        "type": "thorium"
+                    }
+				},
+				"material": "stone",
+				"cluster-size": 5
+			},
+			"cluster-count": 2,
+			"min-height": 8,
+			"max-height": 32,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"uranium": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+                    "name": "immersiveengineering:ore",
+                    "properties": {
+                        "type": "uranium"
+                    }
+				},
+				"material": "stone",
+				"cluster-size": 5
+			},
+			"cluster-count": 2,
+			"min-height": 8,
+			"max-height": 32,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"boron": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+                    "name": "nuclearcraft:ore",
+                    "properties": {
+                        "type": "boron"
+                    }
+				},
+				"material": "stone",
+				"cluster-size": 6
+			},
+			"cluster-count": 4,
+			"min-height": 0,
+			"max-height": 28,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"lithium": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+                    "name": "nuclearcraft:ore",
+                    "properties": {
+                        "type": "lithium"
+                    }
+				},
+				"material": "stone",
+				"cluster-size": 6
+			},
+			"cluster-count": 4,
+			"min-height": 0,
+			"max-height": 28,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"magnesium": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+                    "name": "nuclearcraft:ore",
+                    "properties": {
+                        "type": "magnesium"
+                    }
+				},
+				"material": "stone",
+				"cluster-size": 6
+			},
+			"cluster-count": 3,
+			"min-height": 0,
+			"max-height": 24,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}
