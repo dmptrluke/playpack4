@@ -5,7 +5,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mcupdater.com http://files.mcupdater.com/ServerPackv2.xsd">
 	<Server id="playpack" abstract="false" name="PlayPack 4" newsUrl="https://launcher.dmptr.com/playpack_4/pack.xml" serverAddress="modded.launcher.dmptr.com" version="1.12.2"
 	 generateList="true" autoConnect="false" revision="1.6.11" 
-	 mainClass="net.minecraft.launchwrapper.Launch" launcherType="Vanilla" iconUrl="https://launcher.dmptr.com/launcher/cell.png">
+	 mainClass="net.minecraft.launchwrapper.Launch" launcherType="Vanilla" iconUrl="https://launcher.dmptr.com/launcher/pp4.png">
 		<Meta>
 			<note>The original version of PlayPack for 1.12. Now retired.</note>
 			<note title="Latest Changes">Fix things!</note>
