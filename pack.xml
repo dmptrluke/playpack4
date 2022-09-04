@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="https://launcher.dmptr.com/launcher/ServerPackv2.xsl" type="text/xsl" ?>
-<ServerPack version="3.4" 
-	xmlns="http://www.mcupdater.com" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mcupdater.com http://files.mcupdater.com/ServerPackv2.xsd">
-	<Server id="playpack" abstract="false" name="PlayPack 4" newsUrl="https://launcher.dmptr.com/playpack_4/pack.xml" serverAddress="modded.launcher.dmptr.com" version="1.12.2"
-	 generateList="true" autoConnect="false" revision="1.6.11" 
-	 mainClass="net.minecraft.launchwrapper.Launch" launcherType="Vanilla" iconUrl="https://launcher.dmptr.com/launcher/pp4.png">
+<?xml-stylesheet href="https://launcher.dmptr.com/launcher/ServerPackv2.xsl" type="text/xsl"?>
+<ServerPack version="3.4" xmlns="http://www.mcupdater.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mcupdater.com https://launcher.dmptr.com/launcher/ServerPackv2.xsd">
+	<Server id="playpack" abstract="false" name="PlayPack 4" newsUrl="https://launcher.dmptr.com/playpack_4/pack.xml" serverAddress="modded.launcher.dmptr.com" version="1.12.2" generateList="false" autoConnect="false" revision="1.6.11" mainClass="net.minecraft.launchwrapper.Launch" launcherType="Vanilla" iconUrl="https://launcher.dmptr.com/launcher/pp4.png">
+		<!-- Metadata -->
 		<Meta>
 			<note>The original version of PlayPack for 1.12. Now retired.</note>
 			<note title="Latest Changes">Fix things!</note>
 		</Meta>
-		<Loader type="Forge" version="1.12.2-14.23.5.2860" loadOrder="0"/>
+
+		<!-- Modules -->
+		<Import url="https://launcher.dmptr.com/modules/1.12/basics/module.xml">basics_1.12</Import>
+		<Import url="https://launcher.dmptr.com/modules/1.12/splashanimation/module.xml">splashanimation_1.12</Import>
+		<Import url="https://launcher.dmptr.com/modules/1.12/texturepacks/module.xml">texturepacks_1.12</Import>
+
+		<!-- Loaders -->
+		<Loader type="Forge" version="1.12.2-14.23.5.2860" loadOrder="0" />
+
 		<Module name="Stuff A Sock In It" id="sasit" depends="" side="BOTH">
 			<URL priority="0">https://launcher.dmptr.com/playpack_4/files/mods/StuffASockInIt-1.12.2-1.1.14.jar</URL>
 			<Size>9998</Size>
@@ -650,7 +655,7 @@
 			</ConfigFile>
 		</Module>
 		<Module name="BiblioCraft" id="bibliocraft" depends="" side="BOTH">
-			<URL priority="0">https://launcher.dmptr.com/playpack_4/files/mods/BiblioCraft[v2.4.5][MC1.12.2].jar</URL>
+			<URL priority="0">https://launcher.dmptr.com/playpack_4/files/mods/BiblioCraft-2.4.5.jar</URL>
 			<Size>5122856</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -1162,12 +1167,6 @@
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>E29A2542C53BB82E1246BED326AEA13C</MD5>
-			<ConfigFile>
-				<URL priority="0">http://launcher.dmptr.com/playpack_4/files/config/charset/module/simplelogic.gates.cfg</URL>
-				<Path>config/charset/module/simplelogic.gates.cfg</Path>
-				<NoOverwrite>false</NoOverwrite>
-				<MD5>79C1A7886490657F6B570019F967EF33</MD5>
-			</ConfigFile>
 			<Meta>
 				<credits></credits>
 				<description>SimpleLogic Gates is a mod which adds redstone gates, inspired by the designs found in RedPower 2 and its spiritual successors, in particular RedLogic.</description>
@@ -1175,6 +1174,12 @@
 				<url>https://minecraft.curseforge.com/projects/simplelogic-gates</url>
 				<authors>asiekierka</authors>
 			</Meta>
+			<ConfigFile>
+				<URL priority="0">http://launcher.dmptr.com/playpack_4/files/config/charset/module/simplelogic.gates.cfg</URL>
+				<Path>config/charset/module/simplelogic.gates.cfg</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>79C1A7886490657F6B570019F967EF33</MD5>
+			</ConfigFile>
 		</Module>
 		<Module name="SimpleLogic Wires" id="simplelogic_wires" depends="charsetlib" side="BOTH">
 			<URL priority="0">http://launcher.dmptr.com/playpack_4/files/mods/SimpleLogic-Wires-0.5.5.0.jar</URL>
@@ -1182,12 +1187,6 @@
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>E32BB92B2A74574FC1EA723B893114C1</MD5>
-			<ConfigFile>
-				<URL priority="0">http://launcher.dmptr.com/playpack_4/files/config/charset/module/simplelogic.wires.cfg</URL>
-				<Path>config/charset/module/simplelogic.wires.cfg</Path>
-				<NoOverwrite>false</NoOverwrite>
-				<MD5>d4fc254b33e43beb358566e0e98645ec</MD5>
-			</ConfigFile>
 			<Meta>
 				<credits></credits>
 				<description>SimpleLogic Wires is a mod which adds redstone, insulated and bundled cables.</description>
@@ -1195,6 +1194,12 @@
 				<url>https://minecraft.curseforge.com/projects/simplelogic-wires</url>
 				<authors>asiekierka</authors>
 			</Meta>
+			<ConfigFile>
+				<URL priority="0">http://launcher.dmptr.com/playpack_4/files/config/charset/module/simplelogic.wires.cfg</URL>
+				<Path>config/charset/module/simplelogic.wires.cfg</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>d4fc254b33e43beb358566e0e98645ec</MD5>
+			</ConfigFile>
 		</Module>
 		<Module name="Chisel" id="chisel" depends="" side="BOTH">
 			<URL priority="0">https://launcher.dmptr.com/playpack_4/files/mods/Chisel-MC1.12.2-1.0.2.45.jar</URL>
@@ -1306,6 +1311,18 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<url>http://minetweaker3.powerofbytes.com</url>
 				<authors>StanHebben, Jaredlll08</authors>
 			</Meta>
+			<Submodule name="ModTweaker" id="modtweaker">
+				<URL priority="0">https://launcher.dmptr.com/playpack_4/files/mods/modtweaker-4.0.15.jar</URL>
+				<Size>430351</Size>
+				<ModType>Regular</ModType>
+				<MD5>077962eca1a41f0d116e72153b996d2e</MD5>
+			</Submodule>
+			<Submodule name="MTLib" id="mtlib">
+				<URL priority="0">https://launcher.dmptr.com/playpack_4/files/mods/MTLib-3.0.5.jar</URL>
+				<Size>30005</Size>
+				<ModType>Regular</ModType>
+				<MD5>B8830961B5984565F3ED652D928E7115</MD5>
+			</Submodule>
 			<ConfigFile>
 				<URL priority="0">https://launcher.dmptr.com/playpack_4/files/scripts/unification.zs</URL>
 				<Path>scripts/unification.zs</Path>
@@ -1336,18 +1353,6 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>134B73B8BFAE633E1CBF42ED2816F3A6</MD5>
 			</ConfigFile>
-			<Submodule name="ModTweaker" id="modtweaker">
-				<URL priority="0">https://launcher.dmptr.com/playpack_4/files/mods/modtweaker-4.0.15.jar</URL>
-				<Size>430351</Size>
-				<ModType>Regular</ModType>
-				<MD5>077962eca1a41f0d116e72153b996d2e</MD5>
-			</Submodule>
-			<Submodule name="MTLib" id="mtlib">
-				<URL priority="0">https://launcher.dmptr.com/playpack_4/files/mods/MTLib-3.0.5.jar</URL>
-				<Size>30005</Size>
-				<ModType>Regular</ModType>
-				<MD5>B8830961B5984565F3ED652D928E7115</MD5>
-			</Submodule>
 		</Module>
 		<Module name="BiomeTweaker" id="biometweaker" depends="" side="BOTH">
 			<URL priority="0">https://launcher.dmptr.com/playpack_4/files/mods/BiomeTweaker-1.12.2-3.2.354.jar</URL>
@@ -1362,6 +1367,13 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<url>http://minecraft.curseforge.com/mc-mods/228895-biometweaker</url>
 				<authors>superckl</authors>
 			</Meta>
+			<Submodule name="BiomeTweakerCore" id="biometweakercore">
+				<URL priority="0">https://launcher.dmptr.com/playpack_4/files/mods/BiomeTweakerCore-1.12.2-1.0.39.jar</URL>
+				<Size>45137</Size>
+				<Required>true</Required>
+				<ModType>Regular</ModType>
+				<MD5>b79eb875292bb76eec12b19fd2a692b1</MD5>
+			</Submodule>
 			<ConfigFile>
 				<URL priority="0">https://launcher.dmptr.com/playpack_4/files/config/BiomeTweaker/BiomeTweaker.cfg</URL>
 				<Path>config/BiomeTweaker/BiomeTweaker.cfg</Path>
@@ -1386,19 +1398,12 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>8ffd3480fca5495f2ee080fc14cd0103</MD5>
 			</ConfigFile>
-			<Submodule name="BiomeTweakerCore" id="biometweakercore">
-				<URL priority="0">https://launcher.dmptr.com/playpack_4/files/mods/BiomeTweakerCore-1.12.2-1.0.39.jar</URL>
-				<Size>45137</Size>
-				<Required>true</Required>
-				<ModType>Regular</ModType>
-				<MD5>b79eb875292bb76eec12b19fd2a692b1</MD5>
-				<ConfigFile>
-					<URL priority="0">https://launcher.dmptr.com/playpack_4/files/config/BiomeTweakerCore/BiomeTweakerCore.cfg</URL>
-					<Path>config/BiomeTweakerCore/BiomeTweakerCore.cfg</Path>
-					<NoOverwrite>false</NoOverwrite>
-					<MD5>a33ee8b9e3de3d2a968c9af1aa60e7ca</MD5>
-				</ConfigFile>
-			</Submodule>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_4/files/config/BiomeTweakerCore/BiomeTweakerCore.cfg</URL>
+				<Path>config/BiomeTweakerCore/BiomeTweakerCore.cfg</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>a33ee8b9e3de3d2a968c9af1aa60e7ca</MD5>
+			</ConfigFile>
 		</Module>
 		<Module name="Custom Main Menu" id="custommainmenu" depends="" side="BOTH">
 			<URL priority="0">https://launcher.dmptr.com/playpack_4/files/mods/CustomMainMenu-MC1.12.2-2.0.9.jar</URL>
@@ -1662,7 +1667,7 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<MD5>debb535caa693480944b523b8d025b6b</MD5>
 			</ConfigFile>
 		</Module>
-	    <Module name="Ender IO Zoo" id="enderiozoo" depends="" side="BOTH">
+		<Module name="Ender IO Zoo" id="enderiozoo" depends="" side="BOTH">
 			<URL priority="0">https://launcher.dmptr.com/playpack_4/files/mods/EnderIO-zoo-1.12.2-5.0.38.jar</URL>
 			<Size>449121</Size>
 			<Required>true</Required>
@@ -2054,12 +2059,6 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>dd941ee283cfc5507ed846a1f52e67be</MD5>
-			<ConfigFile>
-				<URL priority="0">https://launcher.dmptr.com/playpack_4/files/scripts/chests.zs</URL>
-				<Path>scripts/chests.zs</Path>
-				<NoOverwrite>false</NoOverwrite>
-				<MD5>d168052373b85564187b94b98695fdb8</MD5>
-			</ConfigFile>
 			<Meta>
 				<credits>By cpw, based on an original idea by Lishid</credits>
 				<description>New chests with larger sizes, with in-place upgrade items.</description>
@@ -2067,6 +2066,12 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<url>http://www.minecraftforum.net/topic/981855-</url>
 				<authors>cpw</authors>
 			</Meta>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_4/files/scripts/chests.zs</URL>
+				<Path>scripts/chests.zs</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>d168052373b85564187b94b98695fdb8</MD5>
+			</ConfigFile>
 		</Module>
 		<Module name="Just Enough Items" id="jei" depends="" side="BOTH">
 			<URL priority="0">https://launcher.dmptr.com/playpack_4/files/mods/jei_1.12.2-4.13.1.225.jar</URL>
@@ -2081,12 +2086,6 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<url>https://github.com/mezz/JustEnoughItems</url>
 				<authors>mezz</authors>
 			</Meta>
-			<ConfigFile>
-				<URL priority="0">https://launcher.dmptr.com/playpack_4/files/config/jei/itemBlacklist.cfg</URL>
-				<Path>config/jei/itemBlacklist.cfg</Path>
-				<NoOverwrite>false</NoOverwrite>
-				<MD5>3ae817cfa39d7d3c64f33db0a325e778</MD5>
-			</ConfigFile>
 			<Submodule name="Just Enough Petroleum" id="jei-jep">
 				<URL>https://launcher.dmptr.com/playpack_4/files/mods/JustEnoughPetroleum-0.1.jar</URL>
 				<Size>18945</Size>
@@ -2098,12 +2097,6 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<Size>117480</Size>
 				<ModType>Regular</ModType>
 				<MD5>a4fef0a3bb6d401eb236b3fe3e1a4846</MD5>
-				<ConfigFile>
-					<URL>https://launcher.dmptr.com/playpack_4/files/config/jeibees.cfg</URL>
-					<Path>config/jeibees.cfg</Path>
-					<NoOverwrite>false</NoOverwrite>
-					<MD5>03E7C4CEB175FA9731BCA1AF02C238D6</MD5>
-				</ConfigFile>
 			</Submodule>
 			<Submodule name="Just Enough Throwing In Fluids" id="jei-jetif">
 				<URL priority="0">https://launcher.dmptr.com/playpack_4/files/mods/jetif-1.12.2-1.2.0.jar</URL>
@@ -2118,6 +2111,18 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 					<authors>Lykrast</authors>
 				</Meta>
 			</Submodule>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_4/files/config/jei/itemBlacklist.cfg</URL>
+				<Path>config/jei/itemBlacklist.cfg</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>3ae817cfa39d7d3c64f33db0a325e778</MD5>
+			</ConfigFile>
+			<ConfigFile>
+				<URL>https://launcher.dmptr.com/playpack_4/files/config/jeibees.cfg</URL>
+				<Path>config/jeibees.cfg</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>03E7C4CEB175FA9731BCA1AF02C238D6</MD5>
+			</ConfigFile>
 		</Module>
 		<Module name="Mantle" id="mantle" depends="" side="BOTH">
 			<URL priority="0">https://launcher.dmptr.com/playpack_4/files/mods/Mantle-1.12-1.3.3.39.jar</URL>
@@ -2283,19 +2288,19 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<url>http://www.vazkii.us</url>
 				<authors>Vazkii, wiiv</authors>
 			</Meta>
-			<ConfigFile>
-				<URL priority="0">https://launcher.dmptr.com/playpack_4/files/config/quark.cfg</URL>
-				<Path>config/quark.cfg</Path>
-				<NoOverwrite>false</NoOverwrite>
-				<MD5>c8f05b5487bb95dac5c0c904ce472b36</MD5>
-			</ConfigFile>
 			<Submodule name="Quark Oddities" id="quark-oddities">
 				<URL priority="0">https://launcher.dmptr.com/playpack_4/files/mods/QuarkOddities-1.12.2.jar</URL>
 				<Size>1556</Size>
 				<Required>true</Required>
 				<ModType>Regular</ModType>
 				<MD5>5a4e0beef74b0001d85391d0afadfeed</MD5>
-		</Submodule>
+			</Submodule>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_4/files/config/quark.cfg</URL>
+				<Path>config/quark.cfg</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>c8f05b5487bb95dac5c0c904ce472b36</MD5>
+			</ConfigFile>
 		</Module>
 		<Module name="Redstone Flux" id="redstoneflux" depends="" side="BOTH">
 			<URL priority="0">https://launcher.dmptr.com/playpack_4/files/mods/RedstoneFlux-1.12-2.1.0.6-universal.jar</URL>
@@ -2781,12 +2786,6 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>4B343C2FFC5F2963EFF8BE0F1B0D77F7</MD5>
 			</ConfigFile>
-			<Meta>
-				<description>An enchanted forest dimension.</description>
-				<version>3.8.654</version>
-				<url>https://minecraft.curseforge.com/projects/the-twilight-forest</url>
-				<authors>Benimatic (Ben Mazur)</authors>
-			</Meta>
 		</Module>
 		<Module name="UniDict" id="unidict" depends="" side="BOTH">
 			<URL priority="0">https://launcher.dmptr.com/playpack_4/files/mods/UniDict-1.12.2-2.9.1.jar</URL>
@@ -2938,8 +2937,5 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<MD5>2849fc975ebb371a4b35c4d8aab39f99</MD5>
 			</ConfigFile>
 		</Module>
-		<Import url="https://launcher.dmptr.com/modules/1.12/basics/module.xml">basics_1.12</Import>
-		<Import url="https://launcher.dmptr.com/modules/1.12/splashanimation/module.xml">splashanimation_1.12</Import>
-        <Import url="https://launcher.dmptr.com/modules/1.12/texturepacks/module.xml">texturepacks_1.12</Import>
 	</Server>
 </ServerPack>
